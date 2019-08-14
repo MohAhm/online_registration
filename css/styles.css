@@ -1,0 +1,161 @@
+/* ================================= 
+  General
+==================================== */
+
+*,
+*::after,
+*::before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+}
+
+
+
+/* ================================= 
+  Main
+==================================== */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* :empty {
+    background-color: #A00;
+} */
+
+
+
+/* ================================= 
+  Form
+==================================== */
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.4em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 2px solid;
+    width: 100%;
+    color: #2D3945;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    color: #495D70;
+}
+
+select,
+textarea,
+input[type="tel"],
+input[type="url"],
+input[type="text"],
+input[type="time"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="datetime"] {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    outline: 0;
+    border-radius: .2em;
+    margin-bottom: 25px;
+    border: 2px solid #EFF0F1;
+    background-color: #EFF0F1;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    border-color: #46698B;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    display: inline;
+    padding-left: 10px;
+}
+
+.checkmark {
+    margin-bottom: 30px;
+}
+
+select {
+    padding: 6px;
+    height: 52px;
+    color: #A8ADB2;
+}
+
+input[name="zip_code"] {
+    width: 50%;
+}
+
+::-webkit-input-placeholder {
+    text-align: right;
+    color: #A8ADB2;
+    font-style: italic;
+    font-weight: 300;
+}
+
+::-moz-placeholder {
+    text-align: right;
+    color: #A8ADB2;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.btn {
+    font-size: 1.17em;
+    cursor: pointer;
+    color: #FFF;
+    padding: 15px;
+    width: 100%;
+    text-transform: capitalize;
+    border: none;
+    border-radius: .2em;
+}
+
+.btn:hover {
+    opacity: .75;
+}
+
+.default {
+    background-color: #4EBBB5;
+}
+
+
+/* textarea {
+    resize: none;
+} */
+
+
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 760px;
+    }
+
+}
