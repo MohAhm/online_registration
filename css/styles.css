@@ -21,9 +21,41 @@ body {
   Main
 ==================================== */
 
+.main-header {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #2D3945;
+    color: #FFF;
+}
+
+#logo {
+    font-size: 1.17em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
+}
+
+.singup {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 5px;
+    border-bottom: 5px solid #2D3945;
+}
+
+.singup h1 {
+    font-size: 1.2em;
+    color: #2D3945;
+}
+
+.singup p {
+    font-size: 0.8em;
+    color: #AAAFB4;
 }
 
 /* :empty {
@@ -38,6 +70,7 @@ body {
 
 fieldset {
     border: none;
+    margin: 0;
     padding: 0;
 }
 
