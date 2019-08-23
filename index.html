@@ -16,29 +16,29 @@
         <h1 id="logo">The code review</h1>
     </header>
 
-    <div class="container">
-        <form action="index.html" method="post">
-            <div class="singup">
-                <h1>Singup for our newsletter</h1>
-                <p>Get the latest news on how your code is doing right in your inbox</p>
-            </div><!-- ./singup -->
+    <form action="index.html" method="post">
+        <div class="singup">
+            <h1>Singup for our newsletter</h1>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div><!-- ./singup -->
 
-            <fieldset>
+        <fieldset class="contact_infromation">
+            <div class="container">
                 <legend>Contact Infromation</legend>
 
                 <div class="row">
                     <label for="name">Full Name</label>
-                    <input required type="text" id="name" name="full_name" placeholder="Required">
+                    <input type="text" id="name" name="full_name" placeholder="Required" required>
                 </div>
 
                 <div class="row">
                     <label for="mail">Email Address</label>
-                    <input required type="email" id="mail" name="email_address" placeholder="Required">
+                    <input type="email" id="mail" name="email_address" placeholder="Required" required>
                 </div>
 
                 <div class="row">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone_number">
+                    <input type="tel" id="phone" name="phone_number" placeholder="070-123 45 67">
                 </div>
 
                 <div class="row">
@@ -68,9 +68,11 @@
                     <label for="zip">Zip Code</label>
                     <input type="text" id="zip" name="zip_code" pattern="[0-9]*">
                 </div>
-            </fieldset>
+            </div><!-- ./container -->
+        </fieldset>
 
-            <fieldset>
+        <fieldset class="newsletter">
+            <div class="container">
                 <legend>Newsletter</legend>
 
                 <div class="checkmark">
@@ -97,11 +99,13 @@
 
                 <label for="topics">Other topics you'd like to hear about</label>
                 <textarea name="user_topics" id="topics" cols="50" rows="5"></textarea>
-            </fieldset>
+            </div><!-- ./container -->
+        </fieldset>
 
-            <input type="submit" value="Sing up" class="btn default">
-        </form>
-    </div><!-- ./container -->
+        <div class="container">
+            <button type="submit" class="btn default">Sing up</button>
+        </div><!-- ./container -->
+    </form>
 
     <footer class="main-footer">
         <p>Copyright the code review</p>
