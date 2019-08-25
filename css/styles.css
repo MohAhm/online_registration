@@ -65,11 +65,13 @@ body {
 }
 
 .contact_infromation {
-    background: url('../img/geometry.png') center;
+    background-image: url("../img/geometry.png");
+    background-repeat: repeat;
 }
 
 .newsletter {
-    background: url('../img/geometry2.png') center;
+    background-image: url("../img/geometry2.png");
+    background-repeat: repeat;
 }
 
 .main-footer {
@@ -141,6 +143,8 @@ select:focus,
 input:focus,
 textarea:focus {
     border-color: #46698B;
+    -webkit-transition: border-color .5s ease-out;
+    transition: border-color .5s ease-out;
 }
 
 input[type="radio"]+label,
@@ -191,6 +195,7 @@ input[name="zip_code"] {
 
 .btn:hover {
     opacity: .75;
+    transition: .15s linear;
 }
 
 .default {
