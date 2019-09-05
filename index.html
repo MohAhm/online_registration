@@ -16,14 +16,14 @@
         <h1 id="logo">The code review</h1>
     </header>
 
-    <form action="index.html" method="post">
-        <div class="singup">
-            <h1>Singup for our newsletter</h1>
-            <p>Get the latest news on how your code is doing right in your inbox</p>
-        </div><!-- ./singup -->
+    <div class="container">
+        <form action="index.html" method="post">
+            <div class="singup">
+                <h1>Singup for our newsletter</h1>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div><!-- ./singup -->
 
-        <fieldset class="contact_infromation">
-            <div class="container">
+            <fieldset class="contact_infromation">
                 <legend>Contact Infromation</legend>
 
                 <div class="row">
@@ -68,11 +68,9 @@
                     <label for="zip">Zip Code</label>
                     <input type="text" id="zip" name="zip_code" pattern="[0-9]*">
                 </div>
-            </div><!-- ./container -->
-        </fieldset>
+            </fieldset>
 
-        <fieldset class="newsletter">
-            <div class="container">
+            <fieldset class="newsletter">
                 <legend>Newsletter</legend>
 
                 <div class="checkmark">
@@ -99,13 +97,11 @@
 
                 <label for="topics">Other topics you'd like to hear about</label>
                 <textarea name="user_topics" id="topics" cols="50" rows="5"></textarea>
-            </div><!-- ./container -->
-        </fieldset>
+            </fieldset>
 
-        <div class="container">
             <button type="submit" class="btn default">Sing up</button>
-        </div><!-- ./container -->
-    </form>
+        </form>
+    </div><!-- ./container -->
 
     <footer class="main-footer">
         <p>Copyright the code review</p>
