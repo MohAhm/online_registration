@@ -23,80 +23,84 @@
                 <p>Get the latest news on how your code is doing right in your inbox</p>
             </div><!-- ./singup -->
 
-            <fieldset class="contact_infromation">
-                <legend>Contact Infromation</legend>
+            <fieldset class="contact_fieldset">
+                <legend class="contact_legend">Contact Infromation</legend>
 
-                <div class="row">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="full_name" placeholder="Required" required>
-                </div>
+                <div class="wrap-label">
+                    <div class="row">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="full_name" placeholder="Required" required>
+                    </div>
 
-                <div class="row">
-                    <label for="mail">Email Address</label>
-                    <input type="email" id="mail" name="email_address" placeholder="Required" required>
-                </div>
+                    <div class="row">
+                        <label for="mail">Email Address</label>
+                        <input type="email" id="mail" name="email_address" placeholder="Required" required>
+                    </div>
 
-                <div class="row">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone_number" placeholder="070-123 45 67">
-                </div>
+                    <div class="row">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone_number" placeholder="070-123 45 67">
+                    </div>
 
-                <div class="row">
-                    <label for="street">Street Address</label>
-                    <input type="text" id="street" name="street_address">
-                </div>
+                    <div class="row">
+                        <label for="street">Street Address</label>
+                        <input type="text" id="street" name="street_address">
+                    </div>
 
-                <div class="row">
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city_name">
-                </div>
+                    <div class="row">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city_name">
+                    </div>
 
-                <div class="row">
-                    <label for="state">State</label>
-                    <select id="state" name="choose_state">
-                        <option disabled selected value="">Choose State</option>
-                        <option value="blekinge">Blekinge</option>
-                        <option value="dalarna">Dalarna</option>
-                        <option value="gotland">Gotland</option>
-                        <option value="halland">Halland</option>
-                        <option value="norrbotten">Norrbotten</option>
-                        <option value="uppland">Uppland</option>
-                    </select>
-                </div>
+                    <div class="row">
+                        <label for="state">State</label>
+                        <select id="state" name="choose_state">
+                            <option disabled selected value="">Choose State</option>
+                            <option value="blekinge">Blekinge</option>
+                            <option value="dalarna">Dalarna</option>
+                            <option value="gotland">Gotland</option>
+                            <option value="halland">Halland</option>
+                            <option value="norrbotten">Norrbotten</option>
+                            <option value="uppland">Uppland</option>
+                        </select>
+                    </div>
 
-                <div class="row">
-                    <label for="zip">Zip Code</label>
-                    <input type="text" id="zip" name="zip_code" pattern="[0-9]*">
-                </div>
+                    <div class="row">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" name="zip_code" pattern="[0-9]*">
+                    </div>
+                </div><!-- ./wrap-label -->
             </fieldset>
 
-            <fieldset class="newsletter">
-                <legend>Newsletter</legend>
+            <fieldset class="newsletter_fieldset">
+                <legend class="newsletter_legend">Newsletter</legend>
 
-                <div class="checkmark">
-                    <label>Select the newsletters you would like to recive</label>
-                    <input type="checkbox" id="html" value="html_news" name="user_newsletters">
-                    <label for="html">HTML News</label>
-                    <br>
-                    <input type="checkbox" id="css" value="css_news" name="user_newsletters">
-                    <label for="css">CSS News</label>
-                    <br>
-                    <input type="checkbox" id="js" value="js_news" name="user_newsletters">
-                    <label for="js">Javascript News</label>
-                </div><!-- ./checkmark -->
+                <div class="wrap-label">
+                    <div class="checkmark">
+                        <label>Select the newsletters you would like to recive</label>
+                        <input type="checkbox" id="html" value="html_news" name="user_newsletters">
+                        <label for="html">HTML News</label>
+                        <br>
+                        <input type="checkbox" id="css" value="css_news" name="user_newsletters">
+                        <label for="css">CSS News</label>
+                        <br>
+                        <input type="checkbox" id="js" value="js_news" name="user_newsletters">
+                        <label for="js">Javascript News</label>
+                    </div><!-- ./checkmark -->
 
-                <div class="checkmark">
-                    <label>Newsletters format</label>
-                    <input type="radio" id="html_format" value="html_format" name="user_format">
-                    <label for="html_format">HTML</label>
-                    <br>
-                    <input type="radio" id="text_format" value="text_format" name="user_format">
-                    <label for="text_format">Plain text</label>
-                    <br>
-                </div><!-- ./checkmark -->
+                    <div class="checkmark">
+                        <label>Newsletters format</label>
+                        <input type="radio" id="html_format" value="html_format" name="user_format">
+                        <label for="html_format">HTML</label>
+                        <br>
+                        <input type="radio" id="text_format" value="text_format" name="user_format">
+                        <label for="text_format">Plain text</label>
+                        <br>
+                    </div><!-- ./checkmark -->
 
-                <label for="topics">Other topics you'd like to hear about</label>
-                <textarea name="user_topics" id="topics" cols="50" rows="5"></textarea>
+                    <label for="topics">Other topics you'd like to hear about</label>
+                    <textarea name="user_topics" id="topics" cols="50" rows="5"></textarea>
+                </div><!-- ./wrap-label -->
             </fieldset>
 
             <button type="submit" class="btn default">Sing up</button>

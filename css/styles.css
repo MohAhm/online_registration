@@ -45,6 +45,22 @@ body {
     margin: 0 auto;
 }
 
+.wrap-label {
+    padding: 0 5% 0 5%;
+}
+
+.contact_fieldset,
+.contact_legend {
+    background-image: url("../img/geometry.png");
+    background-repeat: repeat;
+}
+
+.newsletter_fieldset,
+.newsletter_legend {
+    background-image: url("../img/geometry2.png");
+    background-repeat: repeat;
+}
+
 .singup {
     margin-bottom: 5px;
     border-bottom: 5px solid #2D3945;
@@ -90,6 +106,7 @@ legend {
     font-size: 1.4em;
     padding-top: 30px;
     padding-bottom: 15px;
+    padding-left: 5%;
     width: 100%;
     color: #2D3945;
     border-top: 2px solid #2D3945;
